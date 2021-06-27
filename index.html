@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src='https://api.mapbox.com/mapbox.js/v3.3.1/mapbox.js'></script>
+    <link href='https://api.mapbox.com/mapbox.js/v3.3.1/mapbox.css' rel='stylesheet' />
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .container {
+            position: absolute;
+            left: 20px;
+            top: 20px;
+            display: flex;
+            align-items: center;
+        }
+
+        .ipt-box {
+            border: 1px solid #ddd;
+            padding: 10px;
+            border-radius: 5px;
+            margin-right: 10px;
+            background: white;
+        }
+
+        button {
+            padding: 15px 20px;
+            border: 0;
+            border-radius: 10px;
+            background: coral;
+            cursor: pointer;
+        }
+
+        button:active {
+            transform: scale(0.98);
+        }
+
+        #map {
+            width: 100%;
+            height: 100vh;
+            position: relative;
+        }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.0/xlsx.full.min.js"></script>
+</head>
+
+<body>
+    <div id="map"></div>
+    <div class="container">
+        <div class="ipt-box">
+            <input type="file" id="input" accept=".xls,.xlsx,.json,.geojson">
+        </div>
+        <button id="button">Add</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
