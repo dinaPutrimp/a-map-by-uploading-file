@@ -68,45 +68,4 @@ document.getElementById('button').addEventListener('click', () => {
 
     }
 
-    // if (file) {
-    //     let fileReader = new FileReader();
-    //     fileReader.readAsBinaryString(file);
-    //     fileReader.onload = (event) => {
-    //         let data = event.target.result;
-    //         let excelFile = XLSX.read(data, { type: "binary" });
-    //         excelFile.SheetNames.forEach(sheet => {
-    //             let rowObject = XLSX.utils.sheet_to_row_object_array(excelFile.Sheets[sheet]);
-    //             // console.log(rowObject);
-    //             rowObject.forEach(row => {
-    //                 let lat = row.latitude;
-    //                 let long = row.longitude;
-
-    //                 map.setView([0, 115], 5);
-    //                 L.circle([lat, long], {
-    //                     color: getColor(row.altitude),
-    //                     fillColor: getColor(row.altitude),
-    //                     fillOpacity: 0.5,
-    //                     radius: 5000
-    //                 }).bindPopup(`<p>Bandara ${row.Bandara}</p>`).addTo(map);
-    //             })
-    //         })
-    //     }
-    // }
-
-    // function getColor(alt) {
-    //     return alt > 1500 ? '#760000' :
-    //         alt > 1100 ? '#960000' :
-    //             alt > 700 ? '#B80000' :
-    //                 alt > 300 ? '#2F9C7C' :
-    //                     alt > 150 ? '#59B57C' :
-    //                         alt > 100 ? '#89CE78' :
-    //                             alt > 80 ? '#CE7900' :
-    //                                 alt > 50 ? '#FF4E00' :
-    //                                     alt > 40 ? '#E23E58' :
-    //                                         alt > 30 ? '#F86E4C' :
-    //                                             alt > 20 ? '#FF9D46' :
-    //                                                 alt > 10 ? '#FFCB51' :
-    //                                                     '#F9F871';
-
-    // }
 });
